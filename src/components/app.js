@@ -15,7 +15,7 @@ const App = () => (
             <Route exact path='/' component={Home}/>
             <Route path='/about' component={About}/>
             <Route path='/secret-list' component={SecretList}/>
-            <Route path='/protected-stuff' component={auth(ProtectedStuff)}/>
+            <Route path='/protected-stuff' component={auth(ProtectedStuff)}/> {/* by using auth here it only requires authrition in this one spot, can reuse component elsewhere and it won't be required*/}
         </div>
     </div>
 );
